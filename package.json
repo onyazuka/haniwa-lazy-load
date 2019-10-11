@@ -47,6 +47,10 @@
   "license": "ISC",
   "main": "dist/LazyLoad.js",
   "name": "haniwa-lazy-load",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onyazuka/haniwa-lazy-load.git"
+  },
   "scripts": {
     "build": "webpack --mode production",
     "develop": "webpack --mode development --watch",
