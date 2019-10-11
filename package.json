@@ -1,0 +1,56 @@
+{
+  "_from": "haniwa-lazy-load",
+  "_id": "haniwa-lazy-load@1.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-3wIBaP2t+mFPbWqIU4JRxLQsY8LEarXPkwqu71X8giI1S9locVsQZpJUMfJ32KUjJwrvmKpW6wD6Mj8EoHreyQ==",
+  "_location": "/haniwa-lazy-load",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "haniwa-lazy-load",
+    "name": "haniwa-lazy-load",
+    "escapedName": "haniwa-lazy-load",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/haniwa-lazy-load/-/haniwa-lazy-load-1.0.4.tgz",
+  "_shasum": "f13a43d39060e7f8e8dd3e2ec6153ab3dfcc1409",
+  "_spec": "haniwa-lazy-load",
+  "_where": "/media/onyazuka/CEEE5853EE583645/js/LazyLoad/lazyload222",
+  "author": {
+    "name": "Onyazuka"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "haniwa-type-checker": "^1.0.2"
+  },
+  "deprecated": false,
+  "description": "Fast and customizable lazy loading for images and iframes with vanilla js",
+  "devDependencies": {
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9"
+  },
+  "keywords": [
+    "lazy",
+    "load",
+    "lazy_load",
+    "js",
+    "javascript",
+    "vanilla"
+  ],
+  "license": "ISC",
+  "main": "dist/LazyLoad.js",
+  "name": "haniwa-lazy-load",
+  "scripts": {
+    "build": "webpack --mode production",
+    "develop": "webpack --mode development --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.5"
+}
