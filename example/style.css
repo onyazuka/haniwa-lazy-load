@@ -1,0 +1,46 @@
+.images-container {
+  display: flex;
+}
+
+img {
+  max-width: 1000px;
+  max-height: 1000px;
+  width: 1000px;
+  height: 1000px;
+  box-shadow: 0 0 1px 1px black;
+}
+
+iframe {
+  max-width: 1000px;
+  max-height: 1000px;
+  width: 1000px;
+  height: 1000px;
+}
+
+div {
+  width: 1000px;
+  height: 1000px;
+  margin-right: 5px;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.lazy-load-loading {
+  width: 100px;
+  height: 100px;
+  border-left: 10px dotted #008e94;
+  border-radius: 50%;
+  animation: loading 3s linear infinite;
+}
+
+.lazy-load-loading-container {
+  background-color: white;
+}
