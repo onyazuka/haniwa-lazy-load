@@ -20,7 +20,7 @@ function onErrorHandler(element) {
 
 window.onload = () => {
   const lazyLoader = new LL({
-    selectors: ["img", "iframe"],
+    selectors: ["img[data-src]", "iframe"],
     loadHandler: LL.buildDefaultLoadHandler("lazy-load-loading-container", "lazy-load-loading"),
     errorHandler: onErrorHandler,
   });

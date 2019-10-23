@@ -17,7 +17,23 @@ Yet, script has a little limitation: you should set at least approximate size of
 npm i haniwa-lazy-load
 
 ## Usage example
-Look example directory.
+For basic usage, look example directory.
+
+You can always detach lazy loading with:
+```javascript
+lazyLoader.detach();
+``` 
+
+and attach it later with:
+```javascript
+lazyLoader.attach();
+```
+
+If you load your images dynamically, you can always add new elements to lazy load:
+```javascript
+lazyLoader.updateWithSelectors(["img[data-src]", "iframe"]);
+lazyLoader.lazyLoad();
+```
 
 ## LazyLoader Options
 - selectors[array][required] - selectors for elements that should be lazy loaded(example: ["img", "iframe"]);
