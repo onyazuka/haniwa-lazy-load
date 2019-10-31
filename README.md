@@ -1,17 +1,13 @@
 # haniwa-lazy-load
 Fast and customizable lazy loading for images and iframes with vanilla js
 
-## Usage
-**Please use data-src attribute instead of src on elements which you want to be lazy-loaded!***
-
 ## Features
 - Lazy loading of images and iframes;
 - Custom selectors for elements that should be lazy loaded;
+- You can specify src attribute of lazy elements;
 - Loading process customization/visualization;
 - Error handling/visualization;
 - You can disable lazy loading without any pain and changing HTML;
-
-Yet, script has a little limitation: you should set at least approximate size of lazy loading image in css properties.
 
 ## installation
 npm i haniwa-lazy-load
@@ -45,10 +41,12 @@ lazyLoader.lazyLoad();
       does something with the element on a loading error;
 - advance[number][not required][default = 50] - pixels before an image starts loading;
 - setNaturalSizeAfterLoad[bool][not required][default = true] - if true, will set real image size after it will have loaded;
+- lazyAttribute[string][not required][default = 'data-src'] - attribute in which real 'src' is written. When content is loaded, it will be replaced with 'src'.
 
 ## UnlazyLoader Options
 - selectors[array][required];
 - setNaturalSizeAfterLoad[bool][not required][default = true];
+- lazyAttribute[string][not required][default = 'data-src']
 
 ## Licension
 MIT
